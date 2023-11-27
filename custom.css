@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-light,
+.navbar-toggler {
+    color: black;
+    border-color: black;
+}
+
+.navbar-light,
+.navbar-toggler:hover {
+    color: #D3D1E4;
+    border-color: black;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.btn-outline-dark {
+    background-color: #E4DCD1;
+}
+
+.btn-primary {
+    background-color: #D3D1E4;
+    border-color: purple;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: purple;
+    border-color: purple;
+    color: white;
+}
+.btn-outline-dark{
+    background-color: #bdbbcd;
+    border-color: purple;
+    color: purple;
+}
+.btn-outline-dark:hover{
+    background-color: #E4DCD1;
+    border-color: black;
+    color: purple;
+}
+
+.card-img-top{
+opacity: 90%;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background: no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.color-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 60vh;
+}
+
+.custom-card-body {
+    background-color: #D3D1E4;
+}
+
+.singleCol {
+    max-width: 765px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #dfdfdf;
+}
+
+.about img {
+    border-top: 0; /* Assuming you want to remove the top border; adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .color-overlay {
+        min-height: 30vh;
+    }
+}
+
+@media screen and (min-width:992px) {
+	
+}
+.nav-link{
+	text-decoration: none;
+	color: transparent;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-bottom: 10px;
+	background: linear-gradient( 120deg, black 30.69%, #D3D1E4 90.69% );
+	  background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  .navbar{
+	padding: 0%;
+  }
+  .navbar .navbar-nav .nav-item{
+	position:relative
+  }
+  .navbar .navbar-nav .nav-link{
+	padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item{
+	margin: 0 1em 0;
+  }
+  .navbar .navbar-nav .nav-item::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	content: "";
+	background-color:black;
+	width: 0%;
+	height: 2px;
+	transition:all .5s;
+  }
+  .navbar .navbar-nav .nav-item:hover:after{
+	width: 100%;
+  }
+
+
